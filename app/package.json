@@ -1,0 +1,28 @@
+{
+  "name": "lms-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node ./src/index.ts",
+    "start:nodemon": "nodemon ./src/index.ts"
+  },
+  "author": "",
+  "license": "MIT",
+  "types": "./index.d.ts",
+  "dependencies": {
+    "express": "^4.18.2",
+    "path": "^0.12.7",
+    "sqlite3": "^5.1.7-rc.0",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/sqlite3": "^3.1.11",
+    "nodemon": "^3.0.2"
+  }
+}

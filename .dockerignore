@@ -1,0 +1,5 @@
+image/
+bin/
+cdk.out/
+lib/
+aws_creds.sh

@@ -1,8 +1,11 @@
 {
   "name": "lms-mvp",
   "version": "0.1.0",
+  "workspaces": [
+    "app/"
+  ],
   "bin": {
-    "lms-mvp": "bin/lms-mvp.js"
+    "lms-mvp": "bin/stack.ts"
   },
   "scripts": {
     "build": "tsc",
@@ -12,7 +15,8 @@
     "pretty": "npx prettier --write \"./**/*.{js,jsx,json,ts}\"",
     "lint": "npx eslint -c .eslintrc.js --ext .ts .",
     "lint:fix": "npm run lint -- --fix",
-    "tsc": "tsc --project tsconfig.json"
+    "tsc": "tsc --project tsconfig.json",
+    "start": "node-ts ./app/src/index.ts"
   },
   "devDependencies": {
     "@types/jest": "^29.5.11",
